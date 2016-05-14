@@ -7,15 +7,21 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <Arduino.h>
+//#include <SensorReading.h>
+
+
 
 
 void setup()
 {
 
+	//paletada::Message * m = new paletada::Message();
 }
 
 
 void loop()
 {
+
+
 
 }

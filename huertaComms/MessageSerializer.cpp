@@ -1,21 +1,20 @@
 /*
- * Message.cpp
+ * MessageSerializer.cpp
  *
- *  Created on: May 13, 2016
+ *  Created on: May 15, 2016
  *      Author: jose
  */
 
-#include "Message.h"
-
+#include "MessageSerializer.h"
 
 namespace paletada {
 
-Message::Message() {
+MessageSerializer::MessageSerializer() {
 	// TODO Auto-generated constructor stub
 
 }
 
-Message::~Message() {
+MessageSerializer::~MessageSerializer() {
 	// TODO Auto-generated destructor stub
 }
 

@@ -8,12 +8,23 @@
 #ifndef SRC_MESSAGEPROCESSOR_MESSAGELISTENER_H_
 #define SRC_MESSAGEPROCESSOR_MESSAGELISTENER_H_
 
-namespace paletada {
+#include <HuertaModuleCommunicator.h>
+
+using namespace paletada;
+
+namespace capataz {
 
 class MessageListener {
 public:
 	MessageListener();
 	virtual ~MessageListener();
+	int AddModule(HuertaModuleCommunicator * module);
+	int HasWaitingMessages();
+	int ReadMessages(HuertaModuleCommunicator * * modules, int * messagesRead);
+
+
+private:
+	HuertaModuleCommunicator  * modules [];
 };
 
 } /* namespace paletada */

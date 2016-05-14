@@ -13,7 +13,7 @@
 
 namespace paletada {
 
-class CommandMessage :  Message {
+class CommandMessage :public  Message {
 public:
 	 String command;
 

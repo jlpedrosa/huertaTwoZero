@@ -1,20 +1,20 @@
 /*
- * MessageListener.cpp
+ * ErrorMessage.cpp
  *
- *  Created on: May 13, 2016
+ *  Created on: May 15, 2016
  *      Author: jose
  */
 
-#include "MessageListener.h"
+#include "ErrorMessage.h"
 
 namespace paletada {
 
-MessageListener::MessageListener() {
+ErrorMessage::ErrorMessage() {
 	// TODO Auto-generated constructor stub
 
 }
 
-MessageListener::~MessageListener() {
+ErrorMessage::~ErrorMessage() {
 	// TODO Auto-generated destructor stub
 }
 

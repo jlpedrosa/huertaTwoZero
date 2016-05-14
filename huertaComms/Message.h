@@ -16,8 +16,6 @@ namespace paletada {
 class Message {
 public:
 	String sourceId;
-	//time_t sourceDate;
-
 	Message();
 	virtual ~Message();
 };

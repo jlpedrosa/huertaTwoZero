@@ -7,14 +7,15 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <Arduino.h>
-#include <Message.h>
+#include "Message.h"
+
+
 
 
 void setup()
 {
 
 	paletada::Message * m = new paletada::Message();
-	m->sourceId = "testModule";
 }
 
 

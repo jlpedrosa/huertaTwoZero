@@ -11,7 +11,7 @@ namespace paletada {
 
 int HuertaMasterModule::SendBeacon()
 {
-return -1;
+	return -1;
 }
 
 HuertaMasterModule::HuertaMasterModule() {

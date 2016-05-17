@@ -8,18 +8,20 @@
 #ifndef HUERTAMODULECOMMUNICATOR_H_
 #define HUERTAMODULECOMMUNICATOR_H_
 
-#include  "Message.h"
+#include  "message/Message.h"
 
 namespace paletada {
 
 class HuertaModuleCommunicator {
 public:
-	int ScanForMasterChannel(int *channel);
+	HuertaModuleCommunicator(Pregonador *pregonator);
+	virtual ~HuertaModuleCommunicator();
 
 	int SendMessage(Message *message);
 	int ReceiveMessage(Message *message);
-	HuertaModuleCommunicator();
-	virtual ~HuertaModuleCommunicator();
+
+private:
+	Pregonador * _pregonator;
 };
 
 } /* namespace paletada */

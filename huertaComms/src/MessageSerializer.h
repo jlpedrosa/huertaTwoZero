@@ -9,7 +9,7 @@
 #define MESSAGESERIALIZER_H_
 
 #include <Arduino.h>
-#include "Message.h"
+#include "message/Message.h"
 
 namespace paletada {
 

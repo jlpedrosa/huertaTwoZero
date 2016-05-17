@@ -9,8 +9,6 @@
 #define SRC_INITIALSETTINGS_H_
 
 
-#define WIFI_BSSID "sample"
-#define WIFI_PASSWSD "anotherSample"
 
 
 #endif /* SRC_INITIALSETTINGS_H_ */

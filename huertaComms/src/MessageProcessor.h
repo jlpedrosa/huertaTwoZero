@@ -8,7 +8,7 @@
 #ifndef SRC_MESSAGEPROCESSOR_H_
 #define SRC_MESSAGEPROCESSOR_H_
 
-#include <Message.h>
+#include "message/Message.h"
 
 namespace paletada {
 

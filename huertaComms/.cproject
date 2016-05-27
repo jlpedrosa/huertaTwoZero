@@ -5,17 +5,17 @@
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.910961921" moduleId="org.eclipse.cdt.core.settings" name="Default">
 				<externalSettings/>
 				<extensions>
-					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="paletada" buildProperties="" description="" id="0.910961921" name="Default" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+				<configuration artifactName="huertaComms" buildProperties="" description="" id="0.910961921" name="Default" parent="org.eclipse.cdt.build.core.prefbase.cfg">
 					<folderInfo id="0.910961921." name="/" resourcePath="">
 						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.952979152" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
 							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="org.eclipse.cdt.build.core.prefbase.toolchain.952979152.52310970" name=""/>
@@ -25,8 +25,17 @@
 								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.239157887" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/variants/mega"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/cores/arduino"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include/ArduinoJson"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include/ArduinoJson/Internals"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include/ArduinoJson/Polyfills"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include/ArduinoJson/TypeTraits"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/src/Internals"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Adafruit_BMP085_Unified_ID16"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Adafruit_Unified_Sensor_ID31"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/ESP8266_ID127"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/LiquidCrystal_I2C_ID576"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/Bridge/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/EEPROM/src"/>
@@ -65,11 +74,20 @@
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.149990277" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 							</tool>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.54121539" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
-								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1096940598" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" useByScannerDiscovery="false" valueType="includePath">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1096940598" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/variants/mega"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/cores/arduino"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include/ArduinoJson"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include/ArduinoJson/Internals"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include/ArduinoJson/Polyfills"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include/ArduinoJson/TypeTraits"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/src/Internals"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Adafruit_BMP085_Unified_ID16"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Adafruit_Unified_Sensor_ID31"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/ESP8266_ID127"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/LiquidCrystal_I2C_ID576"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/Bridge/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/EEPROM/src"/>
@@ -97,7 +115,7 @@
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/Wire/src"/>
 								</option>
-								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1198905600" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1198905600" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="F_CPU=16000000L"/>
 									<listOptionValue builtIn="false" value="ARDUINO_ARCH_AVR"/>
 									<listOptionValue builtIn="false" value="ARDUINO_AVR_MEGA2560"/>
@@ -108,11 +126,20 @@
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.762536863" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 							</tool>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.1310559623" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
-								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.41298875" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" useByScannerDiscovery="false" valueType="includePath">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.41298875" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/variants/mega"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/cores/arduino"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include/ArduinoJson"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include/ArduinoJson/Internals"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include/ArduinoJson/Polyfills"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/include/ArduinoJson/TypeTraits"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/src/Internals"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Json_ID64/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Adafruit_BMP085_Unified_ID16"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Adafruit_Unified_Sensor_ID31"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/ESP8266_ID127"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/LiquidCrystal_I2C_ID576"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/Bridge/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/EEPROM/src"/>
@@ -140,7 +167,7 @@
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/Wire/src"/>
 								</option>
-								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.884639970" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.884639970" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="F_CPU=16000000L"/>
 									<listOptionValue builtIn="false" value="ARDUINO_ARCH_AVR"/>
 									<listOptionValue builtIn="false" value="ARDUINO_AVR_MEGA2560"/>
@@ -158,7 +185,7 @@
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="paletada.null.189551033" name="paletada"/>
+		<project id="huertaComms.null.189551033" name="huertaComms"/>
 	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>

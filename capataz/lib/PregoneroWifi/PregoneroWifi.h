@@ -14,7 +14,7 @@
 #include "WProgram.h"
 #endif
 
-#define MSG_BUFFER_MAX 2048
+#define MSG_BUFFER_MAX_2 2048
 #define HW_RESET_RETRIES 3
 #define SERVER_CONNECT_RETRIES_BEFORE_HW_RESET 3
 
@@ -89,8 +89,8 @@ private:
 
 	Flags flags;
 
-	char msgOut[MSG_BUFFER_MAX];        //buffer for send method
-	char msgIn[MSG_BUFFER_MAX]; 		//buffer for listen method = limit of incoming message..
+	char msgOut[MSG_BUFFER_MAX_2];        //buffer for send method
+	char msgIn[MSG_BUFFER_MAX_2]; 		//buffer for listen method = limit of incoming message..
 
 	void writeCommand(const char* text1, const char* text2 = NULL);
 	String recvString(String target1, String target2, String target3, uint32_t timeout);

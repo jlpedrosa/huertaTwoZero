@@ -1,0 +1,41 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+
+buildscript {
+    
+    repositories {
+        mavenCentral()
+    }
+    
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.5.RELEASE")
+         
+    }
+}
+
+
+
+jar 
+{
+    baseName = 'gs-rest-service'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+	compile ("org.springframework:spring-web:4.2.6.RELEASE")
+	compile group: 'org.springframework', name: 'spring-webmvc', version: '4.2.6.RELEASE'
+	compile group: 'org.influxdb', name: 'influxdb-java', version: '2.2'
+    testCompile("junit:junit")
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}

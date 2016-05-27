@@ -78,7 +78,8 @@ void processCommand(WifiMessage msg) {
     asm volatile ("  jmp 0");
   }
   // Unknown command
-  else {
+  else
+  {
     wifi.send(msg.channel,"ERR");
   }
 }

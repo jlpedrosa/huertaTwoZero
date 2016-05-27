@@ -15,9 +15,11 @@ namespace paletada {
 
 class Message {
 public:
+	String messageType;
 	String sourceId;
 	Message();
 	virtual ~Message();
+	virtual uint8_t * toJson();
 };
 
 } /* namespace paletada */

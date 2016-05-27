@@ -7,15 +7,17 @@
 
 #include <LiquidCrystal_I2C.h>
 #include <Arduino.h>
-#include <HuertaMasterModule.h>
+
 
 
 #include "InitialSettings.h"
 #include "mainESP8266.h"
 #include "mainPregonero.h"
+#include <sensors/Sensor.h>
 
 using namespace capataz;
 using namespace paletada;
+
 
 HardwareSerial *wifiSerial;
 HardwareSerial *debugSerial;
@@ -25,6 +27,10 @@ HardwareSerial *debugSerial;
 #define WIFI_RESET_PIN 8
 
 LiquidCrystal_I2C lcd(0x27, LCD_COLUMNS, LCD_ROWS); // set the LCD address to 0x27 for a 16 chars and 2 line display
+
+Sensor ** sensors;
+
+
 
 void setup() {
 	//Configure debug(PC) port
@@ -42,6 +48,7 @@ void setup() {
 
 	lcd.setCursor(0, 0);
 	lcd.print("Init wifi..");
+
 	//setupESP();
 	//setupPregonero(wifiSerial, debugSerial, 8);
 
@@ -57,6 +64,12 @@ void setup() {
 
 }
 
-void loop() {
-	// loopESP();
+void loop()
+{
+//	std::vector<std::string> strvec(strarr, strarr + 3);
+//	std::vector<std::string>::iterator itr = strvec.begin();
+//	while(itr != strvec.end()) {
+//	  listbox.items.add(*itr);
+//	  ++itr;
+//	}
 }

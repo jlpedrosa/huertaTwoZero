@@ -8,7 +8,11 @@
 #ifndef HUERTAMODULECOMMUNICATOR_H_
 #define HUERTAMODULECOMMUNICATOR_H_
 
-#include  "message/Message.h"
+#include <ArduinoJson.h>
+//#include "ArduinoJson.h"
+#include "message/Message.h"
+#include "Pregonador.h"
+
 
 namespace paletada {
 
@@ -17,11 +21,12 @@ public:
 	HuertaModuleCommunicator(Pregonador *pregonator);
 	virtual ~HuertaModuleCommunicator();
 
-	int SendMessage(Message *message);
+	int SendMessage(Message *request, Message *responseMsg);
 	int ReceiveMessage(Message *message);
 
 private:
-	Pregonador * _pregonator;
+	paletada::Pregonador * _pregonator;
+
 };
 
 } /* namespace paletada */

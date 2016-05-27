@@ -96,7 +96,7 @@ bool PregoneroWifi::begin() {
     //Do a HW reset
     bool statusOk = false;
     byte i = 0;
-    while(i<HW_RESET_RETRIES &!statusOk)
+    while((i<HW_RESET_RETRIES) & (!statusOk))
     {
     	if (hardwareReset())
     		statusOk = true;

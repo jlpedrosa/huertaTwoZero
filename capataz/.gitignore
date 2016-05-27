@@ -1,2 +1,3 @@
 .pioenvs
-*InitialSettings.h
+.clang_complete
+.gcc-flags.json

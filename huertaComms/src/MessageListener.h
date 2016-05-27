@@ -8,7 +8,7 @@
 #ifndef SRC_MESSAGEPROCESSOR_MESSAGELISTENER_H_
 #define SRC_MESSAGEPROCESSOR_MESSAGELISTENER_H_
 
-#include <HuertaModuleCommunicator.h>
+#include "HuertaModuleCommunicator.h"
 
 using namespace paletada;
 

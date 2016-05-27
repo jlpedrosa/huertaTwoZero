@@ -8,12 +8,15 @@
 #ifndef PREGONADOR_H_
 #define PREGONADOR_H_
 
+#include <Arduino.h>
+
 namespace paletada {
 
 class Pregonador {
 public:
 	Pregonador();
 	virtual ~Pregonador();
+	virtual uint8_t * sendMessage(uint8_t *  message);
 };
 
 } /* namespace paletada */

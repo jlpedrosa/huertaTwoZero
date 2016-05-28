@@ -37,10 +37,6 @@ int HuertaModuleCommunicator::SendMessage(Message *request, Message *responseMsg
 		 DynamicJsonBuffer jsonBuffer;
 		 JsonObject& root = jsonBuffer.parseObject((char *)response);
 
-
-
-
-
 }
 
 int HuertaModuleCommunicator::ReceiveMessage(Message *message)
@@ -50,5 +46,11 @@ int HuertaModuleCommunicator::ReceiveMessage(Message *message)
 
 
 
+}
+
+int paletada::HuertaModuleCommunicator::HeartBeat() {
+}
+
+unsigned long paletada::HuertaModuleCommunicator::GetDate() {
 }
 /* namespace paletada */

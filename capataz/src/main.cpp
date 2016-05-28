@@ -5,15 +5,18 @@
  *      Author: jose
  */
 
-#include <LiquidCrystal_I2C.h>
 #include <Arduino.h>
+#include <SPI.h>
+#include <LiquidCrystal_I2C.h>
 
-
+#include <include/ArduinoJson.h>
+#include <RF24/PregoneroNRF24L01.h>
+#include <sensors/Sensor.h>
 
 #include "InitialSettings.h"
 #include "mainESP8266.h"
 #include "mainPregonero.h"
-#include <sensors/Sensor.h>
+
 
 using namespace capataz;
 using namespace paletada;
@@ -40,6 +43,7 @@ void setup() {
 	//Configure wifi ESP8266 port
 	wifiSerial = &Serial1;
 	wifiSerial->begin(9600);
+
 
 	//Configure lcd
 	lcd.init();

@@ -8,8 +8,7 @@
 #ifndef HUERTAMODULECOMMUNICATOR_H_
 #define HUERTAMODULECOMMUNICATOR_H_
 
-#include <ArduinoJson.h>
-//#include "ArduinoJson.h"
+#include <include/ArduinoJson.h>
 #include "message/Message.h"
 #include "Pregonador.h"
 
@@ -23,6 +22,8 @@ public:
 
 	int SendMessage(Message *request, Message *responseMsg);
 	int ReceiveMessage(Message *message);
+	int HeartBeat();
+	unsigned long GetDate();
 
 private:
 	paletada::Pregonador * _pregonator;

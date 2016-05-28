@@ -37,6 +37,7 @@
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Adafruit_Unified_Sensor_ID31"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/ESP8266_ID127"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/LiquidCrystal_I2C_ID576"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/RF24_ID433"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/Bridge/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/EEPROM/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/Esplora/src"/>
@@ -89,6 +90,7 @@
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Adafruit_Unified_Sensor_ID31"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/ESP8266_ID127"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/LiquidCrystal_I2C_ID576"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/RF24_ID433"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/Bridge/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/EEPROM/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/Esplora/src"/>
@@ -141,6 +143,7 @@
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/Adafruit_Unified_Sensor_ID31"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/ESP8266_ID127"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/LiquidCrystal_I2C_ID576"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/lib/RF24_ID433"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/Bridge/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/EEPROM/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoavr/libraries/Esplora/src"/>

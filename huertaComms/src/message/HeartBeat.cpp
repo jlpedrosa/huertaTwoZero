@@ -1,28 +1,21 @@
 /*
- * Message.cpp
+ * HeartBeat.cpp
  *
- *  Created on: May 13, 2016
+ *  Created on: May 28, 2016
  *      Author: jose
  */
 
-#include "Message.h"
-
+#include "HeartBeat.h"
 
 namespace paletada {
 
-Message::Message() {
+HeartBeat::HeartBeat() {
 	// TODO Auto-generated constructor stub
 
 }
 
-Message::~Message() {
+HeartBeat::~HeartBeat() {
 	// TODO Auto-generated destructor stub
-}
-
-
-uint8_t * Message::toJson()
-{
-	return NULL;
 }
 
 } /* namespace paletada */

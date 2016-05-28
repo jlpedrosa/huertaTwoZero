@@ -16,7 +16,7 @@ class Pregonador {
 public:
 	Pregonador();
 	virtual ~Pregonador();
-	virtual uint8_t * sendMessage(uint8_t *  message);
+	virtual uint8_t * sendMessage(uint8_t *  message)  = 0 ;
 };
 
 } /* namespace paletada */

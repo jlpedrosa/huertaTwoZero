@@ -19,3 +19,6 @@ Sensor::~Sensor() {
 }
 
 } /* namespace paletada */
+
+bool paletada::Sensor::HasReading() {
+}

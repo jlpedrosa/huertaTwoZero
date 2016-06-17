@@ -60,8 +60,21 @@ void setup() {
 	//NTPClient timeClient("europe.pool.ntp.org", 3600, 60000);
 
 	//Connect RF
-	//ml = new MessageListener();
-	//selfModule = new HuertaMasterModule();
+	Serial.println("Starting NRF24L01");
+	paletada::PregoneroNRF24L01 *radio = new paletada::PregoneroNRF24L01(RF24_CEPIN,RF24_CSPIN);
+
+
+	int availableChannel = -1;
+	while ((availableChannel =radio->FindAvailableChannel())<0)
+	{
+		Serial.print("Error looking for an avilable channel result: ");
+		Serial.println(availableChannel);
+		delay(1000);
+	}
+
+
+	paletada::HuertaModuleCommunicator *comms = new paletada::HuertaModuleCommunicator(radio);
+
 	lcd.clear();
 	lcd.setCursor(0, 0);
 	lcd.print("Capataz running");
@@ -70,10 +83,5 @@ void setup() {
 
 void loop()
 {
-//	std::vector<std::string> strvec(strarr, strarr + 3);
-//	std::vector<std::string>::iterator itr = strvec.begin();
-//	while(itr != strvec.end()) {
-//	  listbox.items.add(*itr);
-//	  ++itr;
-//	}
+
 }

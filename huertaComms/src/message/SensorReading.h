@@ -13,7 +13,7 @@
 
 namespace paletada {
 
-class SensorReading: public Message {
+class SensorReading : public Message {
 public:
 	String SensorId;
 	SensorReading();

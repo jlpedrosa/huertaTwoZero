@@ -25,6 +25,7 @@ public:
 	int FindMasterChannel();
 	int FindAvailableChannel();
 	uint8_t * sendMessage(uint8_t *  message) override;
+	virtual bool HasData() override;
 
 private:
 	RF24 *radio;

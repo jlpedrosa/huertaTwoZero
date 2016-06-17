@@ -18,6 +18,7 @@
 
 zagal::ZagalConfig * cfg;
 paletada::Sensor ** sensors;
+int sensorCount =0;
 paletada::HuertaModuleCommunicator *comms ;
 
 void ShowErrorAndHalt(const char * msg)
@@ -35,8 +36,9 @@ void setup()
 
 	cfg = new zagal::ZagalConfig();
 
+
 	Serial.println("Starting NRF24L01");
-	paletada::PregoneroNRF24L01 *radio = new paletada::PregoneroNRF24L01(0,0);
+	paletada::PregoneroNRF24L01 *radio = new paletada::PregoneroNRF24L01(RF24_CEPIN,RF24_CSPIN);
 
 	//find the control channel
 	Serial.println("Look for capataz channel");
@@ -66,22 +68,44 @@ void setup()
 	}
 	setTime(pctime);
 
+	Serial.println("Zagal starting...");
 
 }
 
 
 void loop()
 {
-	paletada::Sensor  *sensors2[] = sensors;
 
-	paletada::Sensor  *sensor = NULL;
-	 if (sensor->HasReading())
-	 {
-		 paletada::SensorReading reading = sensor->GetReading();
-		 comms->SendMessage(&reading);
+	bool somethingDone = false;
 
-	 }
+	for(int i=0; i<sensorCount; i++)
+	{
+		paletada::Sensor  *sensor = sensor[i];
 
+		if (sensor->HasReading())
+		{
+			somethingDone = true;
+			paletada::SensorReading *reading = sensor->GetReading();
+			paletada::Message *reply = NULL;
+			comms->SendMessage(reading, reply);
+		}
+	}
+
+	while(comms->HasMessages())
+	{
+		somethingDone = true;
+		paletada::Message *m = NULL;
+		comms->ReceiveMessage(m);
+	}
+
+	if (!somethingDone)
+	{
+		delay(50);
+	}
 
 }
 
+void processMessage(paletada::Message *m)
+{
+
+}

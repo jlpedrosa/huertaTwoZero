@@ -11,7 +11,8 @@
 namespace paletada
 {
 
-HuertaModuleCommunicator::HuertaModuleCommunicator(Pregonador *pregonator) {
+HuertaModuleCommunicator::HuertaModuleCommunicator(Pregonador *pregonator)
+{
 	_pregonator = pregonator;
 
 }
@@ -44,13 +45,29 @@ int HuertaModuleCommunicator::ReceiveMessage(Message *message)
 
 }
 
+int paletada::HuertaModuleCommunicator::HeartBeat()
+{
+	int responseCode = -1;
 
+	paletada::HeartBeatMessage hb;
+	paletada::Message *response;
+
+	if ((responseCode = this->SendMessage(&hb, response)) < 0)
+	{
+		return -1;
+	}
 
 }
 
-int paletada::HuertaModuleCommunicator::HeartBeat() {
+unsigned long paletada::HuertaModuleCommunicator::GetDate()
+{
+
 }
 
-unsigned long paletada::HuertaModuleCommunicator::GetDate() {
+bool paletada::HuertaModuleCommunicator::HasMessages()
+{
+	return _pregonator->HasData();
+}
+
 }
 /* namespace paletada */

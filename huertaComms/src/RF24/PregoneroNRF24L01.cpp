@@ -36,7 +36,12 @@ PregoneroNRF24L01::~PregoneroNRF24L01() {
 int PregoneroNRF24L01::FindAvailableChannel() {
 }
 
-uint8_t * PregoneroNRF24L01:: sendMessage(uint8_t *  message)
+uint8_t * PregoneroNRF24L01::sendMessage(uint8_t *  message)
+{
+
+}
+
+bool PregoneroNRF24L01::HasData()
 {
 
 }

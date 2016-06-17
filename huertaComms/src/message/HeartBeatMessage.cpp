@@ -5,16 +5,16 @@
  *      Author: jose
  */
 
-#include "HeartBeat.h"
+#include "HeartBeatMessage.h"
 
 namespace paletada {
 
-HeartBeat::HeartBeat() {
+HeartBeatMessage::HeartBeatMessage() {
 	// TODO Auto-generated constructor stub
 
 }
 
-HeartBeat::~HeartBeat() {
+HeartBeatMessage::~HeartBeatMessage() {
 	// TODO Auto-generated destructor stub
 }
 
